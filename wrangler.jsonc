@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cloudypilot-installer",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public/",
+    "binding": "ASSETS",
+    // Every request goes through the Worker; it serves favicon.ico itself and never exposes the raw binary
+    "run_worker_first": true
+  },
+  "routes": [
+    { "pattern": "installer.hauckelabs.dev", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}
