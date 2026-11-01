@@ -1,7 +1,7 @@
 <?php
 # Shared by index.php and build_agnos.php
 define("GITHUB_REPO", "CHaucke89/cloudypilot");  # owner/repo installed by every generated binary
-define("DEFAULT_BRANCH", "master");
+define("DEFAULT_BRANCH", "master-prebuilt");
 define("LOADING_MSG", "cloudypilot");  # shown as "Installing cloudypilot", max 39 chars
 
 # The branch gets pasted into shell commands run by the installer, so only allow characters valid in git refs

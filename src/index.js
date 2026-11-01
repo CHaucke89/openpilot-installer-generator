@@ -1,7 +1,7 @@
 // Cloudflare Worker port of index.php + build_agnos.php
 
 const GITHUB_REPO = "CHaucke89/cloudypilot";  // owner/repo installed by every generated binary
-const DEFAULT_BRANCH = "master";
+const DEFAULT_BRANCH = "master-prebuilt";
 const LOADING_MSG = "cloudypilot";  // shown as "Installing cloudypilot", max 39 chars
 const WEBSITE_URL = "https://installer.hauckelabs.dev";
 
